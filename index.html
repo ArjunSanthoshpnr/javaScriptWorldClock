@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>World Clock</title>
+    <title>Local Clock</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
@@ -12,13 +12,12 @@
 </head>
 <body>
     <div class="container container-block">
-        <div class="row time mx-auto">
+        <div class="row time mx-auto" id="header">
             <h3 id="head">World Clock</h1>
-            <h1 id="fullDate">Monday, January 00, 0000
-</h1>
+                <h1 id="fullDate">Monday, January 00, 0000</h1>
             <h1 id="city"></h1>
         </div>
-        <div class="row time">
+        <div class="row time"  id="container">
            
             <h1 class="st1" id="hr">00</h1>
             <h1 class="st2">:</h1>
@@ -26,7 +25,7 @@
             <h1 class="st2">:</h1>
             <h1 class="st1" id="sec">00</h1>
     
-            <select class="browser-default dropdown custom-select custom-select-lg mb-3" onchange="setUTC()" id="selectUTC">
+            <select class="form-control dropdown" onchange="setUTC()" id="selectUTC">
                 <option selected value="mumbai" class="dropdown">Mumbai</option>
                 <option value="losAngeles" class="dropdown">Los Angeles</option>
                 <option value="chicago" class="dropdown">Chicago</option>
@@ -51,8 +50,8 @@
                 <option value="sydney" class="dropdown">Sydney</option>
             </select>
         </div>
-        <div class="footer">
-            <p>The days run away like wild horses over the hills.</p>
+        <div class="footer" id="footer">
+            <p onclick="darkMode()">The days run away like wild horses over the hills.</p>
           </div>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
