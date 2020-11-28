@@ -69,4 +69,16 @@ function setUTC() {
 
 }
 
+function darkMode() {
+    console.log('dark mode worked')
+    var element = document.getElementById("container");
+    element.classList.toggle('dark-mode');
+    var element = document.getElementById("footer");
+    element.classList.toggle('dark-mode');
+    var element = document.body;
+    element.classList.toggle('dark-mode');
+    var element = document.getElementById("header");
+    element.classList.toggle('dark-mode');
+}
+
 setInterval(setUTC, 1000);
