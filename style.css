@@ -3,7 +3,6 @@
     font-family: 'Oswald', sans-serif;
     color: #2d4d76;
     display: block;
-    margin: 0px;
 }
 
 .container-block {
@@ -28,6 +27,19 @@ h1.st2 {
     display: block;
     margin: auto;
 }
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    color: rgba(0, 0, 0, .3);
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 12px;
+    font-weight: lighter;
+  }
 
 @media only screen and (max-width: 992px) {
     h1.st1 {
