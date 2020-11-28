@@ -3,6 +3,7 @@
     font-family: 'Oswald', sans-serif;
     color: #2d4d76;
     display: block;
+    margin: 0px;
 }
 
 .container-block {
@@ -16,7 +17,7 @@ h1.st1 {
 }
 h1.st2 {
     display: inline-block;
-    width:100px;
+    /*width:100px;*/
     font-size: 180px;
 }
 .dropdown {
@@ -30,41 +31,50 @@ h1.st2 {
 
 @media only screen and (max-width: 992px) {
     h1.st1 {
-        display: inline-block;
         width:150px;
-        font-size: 140px;
+        font-size: 130px;
     }
     h1.st2 {
-        display: inline-block;
-        width:100px;
         font-size: 150px;
+    }
+    .dropdown {
+        width: 60%;
     }
 }
 
 @media only screen and (max-width: 770px) {
     h1.st1 {
-        display: inline-block;
-        width:80px;
-        font-size: 90px;
+        width:100px;
+        font-size: 80px;
     }
     h1.st2 {
-        display: inline-block;
-        width:60px;
         font-size: 90px;
+    }
+    #fullDate {
+        font-size: 30px;
+    }
+    .dropdown {
+        width: 80%;
     }
 }
 
 
 @media only screen and (max-width: 415px) {
     h1.st1 {
-        display: inline-block;
-        width:40px;
-        font-size: 50px;
+        width:80px;
+        font-size: 70px;
     }
     h1.st2 {
-        display: inline-block;
-        width:40px;
-        font-size: 60px;
+        font-size: 70px;
+    }
+    #fullDate {
+        font-size: 25px;
+    }
+    .dropdown {
+        width:80%;
+    }
+    .container-block {
+        padding: 0px;
     }
 }
 
