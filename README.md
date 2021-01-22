@@ -9,5 +9,5 @@ Features included are
   3. Optional dark theme (Click on the footer text.)
   4. Responsive
   
-Click on the below url to access the live webpage of this site.
+Click on the url to access the live webpage of this site.
 https://arjunsanthoshpnr.github.io/javaScriptWorldClock/
